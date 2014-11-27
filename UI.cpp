@@ -51,20 +51,74 @@ void Input()
 
     cout << "Input name, gender, Year of Birth and Year of Death, in that order;" << endl;
     cout << "Insert Magic Here" << endl;
-    cout << "Do you wish to Input another name? (Y/N) " << endl;
+    cout << "Do you wish to Input another name? (Y for yes, any other key for No) " << endl;
     cin >> repeat;
         if ((repeat == 'Y')||(repeat == 'y'))
         {
             Input();
         }
+        else
+        {
+            main();
+        }
 }
 
 void Display()
 {
-    cout << "Display" << endl;
+    char order;
+    cout << "Insert Magic Here" << endl;
+    cout << "Do you wish to order the list by name, gender , birthyear or deathyear? (N/G/B/D)" << endl;
+    cin >> order;
+        if ((order == 'N')||(order == 'n'))
+        {
+            Display();
+        }
+        else if ((order == 'G')||(order == 'g'))
+        {
+            Display();
+        }
+        else if ((order == 'B')||(order == 'b'))
+        {
+            Display();
+        }
+        else if ((order == 'D')||(order == 'd'))
+        {
+            Display();
+        }
+        else
+        {
+            main();
+        }
 }
 
 void Search()
 {
-    cout << "Search" << endl;
+    char order;
+    string terms;
+    cout << "In which category do you wish to search? (N/G/B/D) " << endl;
+    cin >> order;
+    cout << "What are your search terms?" << endl;
+    cin >> terms;
+
+        if ((order == 'N')||(order == 'n'))
+        {
+            cout << "Insert Magic Here" << endl;
+        }
+        else if ((order == 'G')||(order == 'g'))
+        {
+            cout << "Insert Magic Here" << endl;
+        }
+        else if ((order == 'B')||(order == 'b'))
+        {
+            cout << "Insert Magic Here" << endl;
+        }
+        else if ((order == 'D')||(order == 'd'))
+        {
+            cout << "Insert Magic Here" << endl;
+        }
+        else
+        {
+            main();
+        }
+    Search();
 }

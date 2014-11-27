@@ -53,7 +53,7 @@ void Input()
     cout << "Insert Magic Here" << endl;
     cout << "Do you wish to Input another name? (Y/N) " << endl;
     cin >> repeat;
-        if ((repeat == Y)||(repeat == y))
+        if ((repeat == 'Y')||(repeat == 'y'))
         {
             Input();
         }
